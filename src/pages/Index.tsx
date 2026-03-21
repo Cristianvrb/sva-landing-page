@@ -27,7 +27,7 @@ const StudentResults = React.lazy(() => import("@/components/landing/StudentResu
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background relative z-0">
+    <main className="min-h-screen bg-background relative z-0">
       <AnimatedBackground />
       <StickyBar />
       <Hero />
@@ -56,7 +56,7 @@ const Index = () => {
         <Footer />
         <WhatsAppFloat />
       </Suspense>
-    </div>
+    </main>
   );
 };
 

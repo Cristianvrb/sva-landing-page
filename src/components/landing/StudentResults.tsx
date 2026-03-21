@@ -61,7 +61,7 @@ const StudentResults = () => {
                   <p className={`font-bold font-tech text-xl sm:text-2xl ${i < 3 ? r.color : 'text-foreground'}`}>{r.amount}</p>
                 </div>
                 <div className="flex-shrink-0 w-12 h-12 overflow-hidden rounded border-2 border-brand-accent/30 pointer-events-none opacity-80 group-hover:opacity-100 transition-opacity hidden xs:block">
-                  <img src={r.print} alt="Print do Faturamento" className="w-full h-full object-cover grayscale brightness-125" />
+                  <img src={r.print} alt="Print do Faturamento" width="100" height="200" loading="lazy" className="w-full h-full object-cover grayscale brightness-125" />
                 </div>
               </div>
             </div>
@@ -78,6 +78,9 @@ const StudentResults = () => {
               <img
                 src={selectedPrint}
                 alt="Print de Comprovação de Vendas"
+                width="800"
+                height="1600"
+                loading="lazy"
                 className="w-full h-auto rounded-md"
               />
             )}
