@@ -3,6 +3,7 @@ import Hero from "@/components/landing/Hero";
 import SocialProof from "@/components/landing/SocialProof";
 import StickyBar from "@/components/landing/StickyBar";
 import AnimatedBackground from "@/components/landing/AnimatedBackground";
+import { LazySection } from "@/components/LazySection";
 
 // Lazy Loaded Components for maximum load speed (TTI/FCP Optimization)
 const TestimonialCarousel = React.lazy(() => import("@/components/landing/TestimonialCarousel"));
@@ -34,26 +35,40 @@ const Index = () => {
       <SocialProof />
       
       <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="w-16 h-16 border-4 border-brand-accent border-t-transparent rounded-full animate-spin"></div></div>}>
-        <TestimonialCarousel />
-        <ScrollCTA text="QUERO MINHAS PRIMEIRAS VENDAS AUTOMÁTICAS" subtext="Acesso imediato — comece hoje mesmo" />
-        <FeaturedTestimonial />
-        <StudentResults />
-        <ScreenshotGallery />
-        <ProblemAgitation />
-        <Comparison />
-        <WhatIsSVA />
-        <Benefits />
-        <ScrollCTA text="QUERO MONTAR MEU SISTEMA DE VENDAS" subtext="Do zero aos R$10k + vendas diárias no automático" />
-        <InternationalSales />
-        <Deliverables />
-        <Bonus />
-        <TargetAudience />
-        <Author />
-        <Offer />
-        <Guarantee />
-        <FAQ />
-        <ScrollCTA text="ÚLTIMA CHANCE — COMECE HOJE NO AUTOMÁTICO" subtext="Essa condição não volta depois que fechar essa turma" />
-        <Footer />
+        <LazySection minHeight="400px">
+          <TestimonialCarousel />
+          <ScrollCTA text="QUERO MINHAS PRIMEIRAS VENDAS AUTOMÁTICAS" subtext="Acesso imediato — comece hoje mesmo" />
+        </LazySection>
+        <LazySection>
+          <FeaturedTestimonial />
+          <StudentResults />
+          <ScreenshotGallery />
+        </LazySection>
+        <LazySection>
+          <ProblemAgitation />
+          <Comparison />
+        </LazySection>
+        <LazySection>
+          <WhatIsSVA />
+          <Benefits />
+          <ScrollCTA text="QUERO MONTAR MEU SISTEMA DE VENDAS" subtext="Do zero aos R$10k + vendas diárias no automático" />
+        </LazySection>
+        <LazySection>
+          <InternationalSales />
+          <Deliverables />
+          <Bonus />
+        </LazySection>
+        <LazySection>
+          <TargetAudience />
+          <Author />
+          <Offer />
+          <Guarantee />
+        </LazySection>
+        <LazySection>
+          <FAQ />
+          <ScrollCTA text="ÚLTIMA CHANCE — COMECE HOJE NO AUTOMÁTICO" subtext="Essa condição não volta depois que fechar essa turma" />
+          <Footer />
+        </LazySection>
         <WhatsAppFloat />
       </Suspense>
     </main>
