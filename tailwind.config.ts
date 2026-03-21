@@ -90,8 +90,8 @@ export default {
           to: { height: "0" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(var(--brand-cta) / 0.4)" },
-          "50%": { boxShadow: "0 0 40px hsl(var(--brand-cta) / 0.7), 0 0 80px hsl(var(--brand-cta) / 0.3)" },
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.03)" },
         },
         sweep: {
           "0%": { transform: "translateX(-100%)" },

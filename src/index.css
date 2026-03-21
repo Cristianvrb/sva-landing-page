@@ -217,14 +217,12 @@
     background: linear-gradient(
       90deg,
       hsl(var(--brand-accent)),
-      hsl(var(--foreground)),
+      hsl(var(--foreground)) 30%,
       hsl(var(--brand-accent))
     );
-    background-size: 200% auto;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: gradient-shine 4s linear infinite;
     text-shadow: 0 0 10px hsl(var(--brand-accent) / 0.3), 0 0 40px hsl(var(--brand-accent) / 0.1);
   }
 
@@ -289,14 +287,9 @@
       hsl(var(--brand-accent)),
       hsl(var(--foreground))
     );
-    background-size: 200% auto;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: gradient-shine 4s linear infinite;
-  }
-  @keyframes gradient-shine {
-    to { background-position: 200% center; }
   }
 
   /* 3. Glowing Border Sweep (Incrível UX para Cards) */
