@@ -24,8 +24,10 @@ const FeaturedTestimonial = () => {
             <div className={`reveal ${isVisible ? "visible" : ""} stagger-1`}>
               <div className="rounded-lg overflow-hidden border-2 border-brand-accent/30 shadow-[0_0_20px_hsl(var(--brand-accent)/0.15)]">
                 <img
-                  src="/results/bruno-whatsapp.png"
-                  alt="Print real do WhatsApp — depoimento do Bruno"
+                  src="/results/bruno-whatsapp.webp"
+                  width="400"
+                  height="800"
+                  alt="Relatório de Vendas SVA"
                   className="w-full h-auto"
                   loading="lazy"
                 />

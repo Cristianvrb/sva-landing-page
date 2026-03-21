@@ -3,21 +3,21 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const screenshots = [
-  { src: "/results/result-1.jpg", name: "Higor", result: "R$ 801 em vendas num dia" },
-  { src: "/results/result-2.jpg", name: "Nicolas", result: "R$ 10.017 em 3 meses" },
-  { src: "/results/result-3.jpg", name: "Higor Torrez", result: "Indo pros R$ 10k" },
-  { src: "/results/result-4.jpg", name: "Módulo Dólar", result: "USD$ 8,93 automático" },
-  { src: "/results/result-5.jpg", name: "Aluno SVA", result: "Vendeu seguindo a aula" },
-  { src: "/results/result-6.jpg", name: "Aluno SVA", result: "Nova venda realizada!" },
-  { src: "/results/result-7.jpg", name: "Aluno SVA", result: "Comissão garantida" },
-  { src: "/results/result-8.jpg", name: "Aluno SVA", result: "Venda aprovada no cartão" },
-  { src: "/results/result-9.jpg", name: "Aluno SVA", result: "Pix recebido automático" },
-  { src: "/results/result-10.jpg", name: "Aluno SVA", result: "Mais vendas caindo" },
-  { src: "/results/result-11.jpg", name: "Aluno SVA", result: "Resultado da campanha" },
-  { src: "/results/result-12.jpg", name: "Aluno SVA", result: "Acordando com vendas" },
-  { src: "/results/result-13.jpg", name: "Aluno SVA", result: "Recorde batido hoje" },
-  { src: "/results/result-14.jpg", name: "Aluno SVA", result: "Vendas todos os dias" },
-  { src: "/results/result-15.jpg", name: "Aluno SVA", result: "Notificações não param" },
+  { src: "/results/result-1.webp", name: "Higor", result: "R$ 801 em vendas num dia" },
+  { src: "/results/result-2.webp", name: "Nicolas", result: "R$ 10.017 em 3 meses" },
+  { src: "/results/result-3.webp", name: "Higor Torrez", result: "Indo pros R$ 10k" },
+  { src: "/results/result-4.webp", name: "Módulo Dólar", result: "USD$ 8,93 automático" },
+  { src: "/results/result-5.webp", name: "Aluno SVA", result: "Vendeu seguindo a aula" },
+  { src: "/results/result-6.webp", name: "Aluno SVA", result: "Nova venda realizada!" },
+  { src: "/results/result-7.webp", name: "Aluno SVA", result: "Comissão garantida" },
+  { src: "/results/result-8.webp", name: "Aluno SVA", result: "Venda aprovada no cartão" },
+  { src: "/results/result-9.webp", name: "Aluno SVA", result: "Pix recebido automático" },
+  { src: "/results/result-10.webp", name: "Aluno SVA", result: "Mais vendas caindo" },
+  { src: "/results/result-11.webp", name: "Aluno SVA", result: "Resultado da campanha" },
+  { src: "/results/result-12.webp", name: "Aluno SVA", result: "Acordando com vendas" },
+  { src: "/results/result-13.webp", name: "Aluno SVA", result: "Recorde batido hoje" },
+  { src: "/results/result-14.webp", name: "Aluno SVA", result: "Vendas todos os dias" },
+  { src: "/results/result-15.webp", name: "Aluno SVA", result: "Notificações não param" },
 ];
 
 const ScreenshotGallery = () => {

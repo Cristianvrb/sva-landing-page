@@ -4,11 +4,11 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useState } from "react";
 
 const ranking = [
-  { position: 1, name: "Bruno", amount: "Maior Faturamento (Top 1)", desc: "O recordista absoluto de vendas da comunidade", print: "/results/result-6.jpg", color: "text-amber-400", bg: "bg-amber-400/10", border: "border-amber-400/30" },
-  { position: 2, name: "Nicolas", amount: "R$ 10.017,81", desc: "Quebrou a barreira dos 10k de forma consistente", print: "/results/result-2.jpg", color: "text-slate-300", bg: "bg-slate-300/10", border: "border-slate-300/30" },
-  { position: 3, name: "Higor Torrez", amount: "Rumo aos R$ 10k", desc: "Acelerando resultados em tempo recorde", print: "/results/result-3.jpg", color: "text-amber-600", bg: "bg-amber-700/10", border: "border-amber-700/30" },
-  { position: 4, name: "Higor (Diário)", amount: "R$ 801,32", desc: "Pico de vendas diário com script automático", print: "/results/result-1.jpg", color: "text-brand-accent", bg: "bg-brand-accent/5", border: "border-brand-accent/10" },
-  { position: 5, name: "Aluno Confidencial", amount: "Vendas em Dólar", desc: "Ganhando 5x mais vendendo no mercado internacional", print: "/results/result-4.jpg", color: "text-brand-accent", bg: "bg-brand-accent/5", border: "border-brand-accent/10" },
+  { position: 1, name: "Bruno", amount: "Maior Faturamento (Top 1)", desc: "O recordista absoluto de vendas da comunidade", print: "/results/result-6.webp", color: "text-amber-400", bg: "bg-amber-400/10", border: "border-amber-400/30" },
+  { position: 2, name: "Nicolas", amount: "R$ 10.017,81", desc: "Quebrou a barreira dos 10k de forma consistente", print: "/results/result-2.webp", color: "text-slate-300", bg: "bg-slate-300/10", border: "border-slate-300/30" },
+  { position: 3, name: "Higor Torrez", amount: "Rumo aos R$ 10k", desc: "Acelerando resultados em tempo recorde", print: "/results/result-3.webp", color: "text-amber-600", bg: "bg-amber-700/10", border: "border-amber-700/30" },
+  { position: 4, name: "Higor (Diário)", amount: "R$ 801,32", desc: "Pico de vendas diário com script automático", print: "/results/result-1.webp", color: "text-brand-accent", bg: "bg-brand-accent/5", border: "border-brand-accent/10" },
+  { position: 5, name: "Aluno Confidencial", amount: "Vendas em Dólar", desc: "Ganhando 5x mais vendendo no mercado internacional", print: "/results/result-4.webp", color: "text-brand-accent", bg: "bg-brand-accent/5", border: "border-brand-accent/10" },
 ];
 
 const StudentResults = () => {
