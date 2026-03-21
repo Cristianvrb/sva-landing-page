@@ -53,7 +53,10 @@ const ScreenshotGallery = () => {
                 <img
                   src={item.src}
                   alt={`Resultado de ${item.name} — ${item.result}`}
-                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+                  width="400"
+                  height="800"
+                  decoding="async"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105 aspect-[1/2]"
                   loading="lazy"
                 />
               </div>

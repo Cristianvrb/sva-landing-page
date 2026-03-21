@@ -320,13 +320,7 @@
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    background-size: 200% 100%;
-    animation: border-sweep 3s linear infinite;
     z-index: -1;
-  }
-  @keyframes border-sweep {
-    0% { background-position: -100% 0; }
-    100% { background-position: 100% 0; }
   }
 
   /* 4. Animated Grid Background Effect */
@@ -335,11 +329,7 @@
       linear-gradient(hsl(var(--brand-accent) / 0.05) 1px, transparent 1px),
       linear-gradient(90deg, hsl(var(--brand-accent) / 0.05) 1px, transparent 1px);
     background-size: 60px 60px;
-    animation: scroll-grid 10s linear infinite;
-  }
-  @keyframes scroll-grid {
-    0% { background-position: 0px 0px; }
-    100% { background-position: 60px 60px; }
+    /* Removed animation: scroll-grid because background-position causes Heavy CPU/Main Thread load */
   }
 
   /* 💎 HIGH-END BACKGROUND CSS 💎 */
@@ -391,12 +381,9 @@
                       radial-gradient(2px 2px at 500px 550px, rgba(255,255,255,0.9), rgba(0,0,0,0));
     background-size: 550px 600px;
   }
+  /* Removed animate-stardrift as background-position animation spikes CPU on Mobile */
   .animate-stardrift {
-    animation: stardrift 150s linear infinite;
-  }
-  @keyframes stardrift {
-    from { background-position: 0 0; }
-    to { background-position: 550px 600px; }
+    opacity: 0.8;
   }
 
   /* Infinite Logo Marquee */
