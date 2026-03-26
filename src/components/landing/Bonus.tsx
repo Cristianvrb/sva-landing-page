@@ -2,11 +2,11 @@ import { Gift, Sparkles } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const bonuses = [
-  { title: "Comunidade VIP", value: "R$ 997", desc: "Acesso ao grupo exclusivo de alunos com networking e suporte." },
-  { title: "Templates de Funil", value: "R$ 1.497", desc: "Modelos prontos de funis de alta conversão para copiar e colar." },
-  { title: "Pack de Copies", value: "R$ 797", desc: "Scripts de copy para anúncios, e-mails e páginas de vendas." },
-  { title: "Masterclass de Tráfego", value: "R$ 497", desc: "Aula especial com estratégias avançadas de Facebook e Google Ads." },
-  { title: "Mentoria em Grupo", value: "R$ 2.997", desc: "4 encontros mensais ao vivo para tirar dúvidas e receber feedback." },
+  { title: "Comunidade VIP", desc: "Acesso ao grupo exclusivo de alunos com networking e suporte." },
+  { title: "Templates de Funil", desc: "Modelos prontos de funis de alta conversão para copiar e colar." },
+  { title: "Pack de Copies", desc: "Scripts de copy para anúncios, e-mails e páginas de vendas." },
+  { title: "Masterclass de Tráfego", desc: "Aula especial com estratégias avançadas de Facebook e Google Ads." },
+  { title: "Mentoria em Grupo", desc: "Encontros ao vivo para tirar dúvidas e receber feedback direto." },
 ];
 
 const Bonus = () => {
@@ -32,11 +32,10 @@ const Bonus = () => {
               <div className="absolute top-3 right-3">
                 <Gift className="w-5 h-5 text-yellow-500" />
               </div>
-              <p className="text-xs text-muted-foreground line-through mb-1">Valor: {b.value}</p>
               <h3 className="font-tech text-xl font-bold mb-2">{b.title}</h3>
               <p className="text-muted-foreground text-sm">{b.desc}</p>
               <div className="mt-4 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-brand-accent/10 border border-brand-accent/30">
-                <span className="text-xs font-bold text-brand-accent">GRÁTIS</span>
+                <span className="text-xs font-bold text-brand-accent">INCLUSO</span>
               </div>
             </div>
           ))}
@@ -44,8 +43,7 @@ const Bonus = () => {
 
         <div className="text-center mt-10">
           <p className="text-muted-foreground">
-            Total em bônus: <span className="line-through">R$ 6.785</span>{" "}
-            <span className="neon-text font-bold text-lg">GRÁTIS</span>
+            Tudo isso <span className="neon-text font-bold text-lg">já incluso</span> no seu acesso
           </p>
         </div>
       </div>

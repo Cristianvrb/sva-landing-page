@@ -11,7 +11,7 @@ const ScrollCTA = ({
 }: ScrollCTAProps) => {
   return (
     <div className="py-12 text-center">
-      <a href="#oferta" className="btn-tech text-lg px-12 py-5 animate-pulse-glow">
+      <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech text-lg px-12 py-5 animate-pulse-glow">
         {text}
         <ArrowRight className="w-5 h-5" />
       </a>

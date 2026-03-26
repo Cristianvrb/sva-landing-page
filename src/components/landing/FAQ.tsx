@@ -40,12 +40,12 @@ const FAQ = () => {
 
         {/* CTA final */}
         <div className="text-center mt-12 space-y-4">
-          <a href="#oferta" className="btn-tech text-lg px-12 py-5 animate-pulse-glow">
+          <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech text-lg px-12 py-5 animate-pulse-glow">
             QUERO MINHA VAGA AGORA
             <ArrowRight className="w-5 h-5" />
           </a>
           <div>
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mt-4">
+            <a href="https://wa.me/5511976751887" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mt-4">
               <MessageCircle className="w-4 h-4" />
               Ainda tem dúvida? Fale com nosso time
             </a>

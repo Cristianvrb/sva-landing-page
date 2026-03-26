@@ -16,7 +16,7 @@ const after = [
   "Trabalha 2-3h por dia",
   "Crescimento constante mês a mês",
   "Liberdade geográfica e de tempo",
-  "ROI de 5x a 15x em tráfego pago",
+  "Tráfego que se paga e dá lucro",
 ];
 
 const Comparison = () => {

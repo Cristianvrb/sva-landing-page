@@ -5,7 +5,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const getScenarioLabel = (roas: number) => {
   if (roas <= 3) return { label: "Conservador", color: "text-muted-foreground" };
-  if (roas <= 6) return { label: "Validado por alunos", color: "text-brand-accent" };
+  if (roas <= 6) return { label: "Realista", color: "text-brand-accent" };
   return { label: "Otimista", color: "text-brand-cta" };
 };
 

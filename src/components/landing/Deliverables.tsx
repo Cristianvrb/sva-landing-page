@@ -3,14 +3,14 @@ import { BookOpen } from "lucide-react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const modules = [
-  { title: "Módulo 1 — Fundamentos do SVA", lessons: "8 aulas", desc: "Mentalidade, posicionamento e os fundamentos do sistema de vendas automáticas." },
-  { title: "Módulo 2 — Estrutura do Funil", lessons: "12 aulas", desc: "Como criar funis de alta conversão, páginas de vendas e sequências de e-mail." },
-  { title: "Módulo 3 — Tráfego Pago Inteligente", lessons: "15 aulas", desc: "Facebook Ads, Google Ads, TikTok Ads — como criar campanhas lucrativas do zero." },
-  { title: "Módulo 4 — Copy e VSL", lessons: "10 aulas", desc: "Copywriting persuasivo e como criar VSLs que vendem no automático." },
-  { title: "Módulo 5 — Automação Total", lessons: "8 aulas", desc: "Automações de e-mail, remarketing, chatbots e integração de ferramentas." },
-  { title: "Módulo 6 — Escala e Internacionalização", lessons: "10 aulas", desc: "Como escalar para R$ 100k+/mês e vender para o exterior em dólar." },
-  { title: "Módulo 7 — Otimização e Métricas", lessons: "6 aulas", desc: "KPIs, testes A/B, otimização de funil e como maximizar o ROI." },
-  { title: "Módulo 8 — Mentalidade de Escala", lessons: "5 aulas", desc: "Gestão de equipe, processos e mentalidade para faturar 7 dígitos." },
+  { title: "Módulo 1 — Fundamentos do SVA", lessons: "4 aulas", desc: "Visão geral do sistema, início prático e o que você precisa fazer para vender." },
+  { title: "Módulo 2 — Estrutura & Tráfego Pago", lessons: "4 aulas", desc: "Como montar sua estrutura e criar campanhas no Facebook Ads do zero." },
+  { title: "Módulo 3 — Vendas via WhatsApp", lessons: "5 aulas", desc: "Campanhas para WhatsApp, bots de automação e análise de métricas." },
+  { title: "Módulo 4 — Automação com I.A", lessons: "4 aulas", desc: "Agentes de I.A para vendas, sites automatizados e recuperação de vendas." },
+  { title: "Módulo 5 — Criação de Produto do Zero", lessons: "4 aulas", desc: "Como criar e hospedar seu próprio produto digital." },
+  { title: "Módulo 6 — Escala & Otimização", lessons: "5 aulas", desc: "Rastreamento, pré-escala e como preparar tudo para crescer." },
+  { title: "Módulo 7 — Vendas Internacionais", lessons: "2 aulas", desc: "Como vender em dólar no mercado internacional." },
+  { title: "Módulo 8 — Mentorias ao Vivo", lessons: "3 aulas", desc: "Tira-dúvidas, análise de resultados e suporte em grupo." },
 ];
 
 const Deliverables = () => {
@@ -24,7 +24,7 @@ const Deliverables = () => {
           <h2 className="section-title">
             O que Você Vai <span className="neon-text">Receber</span>
           </h2>
-          <p className="text-muted-foreground mt-4">8 módulos • 74 aulas • +50 horas de conteúdo prático</p>
+          <p className="text-muted-foreground mt-4">8 módulos • 30+ aulas práticas</p>
         </div>
 
         <div ref={ref} className={`max-w-3xl mx-auto reveal ${isVisible ? "visible" : ""}`}>

@@ -9,17 +9,17 @@ const Hero = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-brand-accent/5 blur-[120px] pointer-events-none" />
 
       <div className="section-container relative z-10 text-center">
-        {/* Badge real */}
+        {/* Badge */}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-accent/30 bg-brand-accent/5">
             <Star className="w-4 h-4 fill-yellow-500 text-yellow-500" />
-            <span className="text-sm text-brand-accent font-medium">4.9/5 de satisfação dos alunos</span>
+            <span className="text-sm text-brand-accent font-medium">Alunos com resultados reais — de R$ 800/dia a R$ 10k/mês</span>
           </div>
         </div>
 
         {/* HEADLINE PRINCIPAL */}
         <h1 className="font-tech text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight max-w-4xl mx-auto">
-          Descubra como construir um <span className="neon-text">Sistema de Vendas Automáticas</span> e sair do zero aos R$ 10k faturados.
+          O Sistema que Gera Vendas <span className="neon-text">Automáticas Todo Dia</span> — Sem Aparecer, Sem Lançamentos.
         </h1>
         
         {/* SUBHEADLINE */}
@@ -59,8 +59,8 @@ const Hero = () => {
 
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          <a href="#oferta" className="btn-tech text-xl px-12 py-5 animate-pulse-glow">
-            QUERO COMEÇAR NO AUTOMÁTICO HOJE
+          <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech text-xl px-12 py-5 animate-pulse-glow">
+            QUERO MEU SISTEMA DE VENDAS — R$ 97,90
             <ArrowRight className="w-5 h-5" />
           </a>
         </div>

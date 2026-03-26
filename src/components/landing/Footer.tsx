@@ -12,7 +12,7 @@ const Footer = () => {
             A Decisão é <span className="text-brand-cta">Sua</span>
           </h2>
           <p className="text-muted-foreground mb-4 max-w-xl mx-auto text-lg">
-            Ou você continua tentando sozinho… ou segue um sistema que já levou milhares de pessoas do zero aos R$10k — e depois transformou isso em vendas diárias.
+            Ou você continua tentando sozinho… ou segue um sistema que já ajudou dezenas de alunos a saírem do zero e construírem vendas automáticas — todos os dias.
           </p>
           <p className="text-foreground font-semibold mb-2 max-w-xl mx-auto">
             Primeiro você chega nos R$10k.
@@ -21,11 +21,11 @@ const Footer = () => {
             Depois o sistema vende por você, todos os dias.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#oferta" className="btn-tech text-xl px-14 py-6 animate-pulse-glow">
+            <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech text-xl px-14 py-6 animate-pulse-glow">
               GARANTIR MINHA VAGA
               <ArrowRight className="w-6 h-6" />
             </a>
-            <a href="#oferta" className="btn-tech-green text-lg px-10 py-5">
+            <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech-green text-lg px-10 py-5">
               QUERO FATURAR NO AUTOMÁTICO
               <ArrowRight className="w-5 h-5" />
             </a>

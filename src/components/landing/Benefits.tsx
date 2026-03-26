@@ -2,12 +2,12 @@ import { Rocket, Target, Shield, Clock, Globe, BarChart3, Repeat, Heart } from "
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const benefits = [
-  { icon: Rocket, title: "Escale Rápido", desc: "Passe de R$ 0 a R$ 50k/mês em menos de 90 dias" },
+  { icon: Rocket, title: "Escale Rápido", desc: "Saia do zero às primeiras vendas em semanas, não meses" },
   { icon: Target, title: "Tráfego Preciso", desc: "Aprenda a criar anúncios que convertem de verdade" },
-  { icon: Shield, title: "Método Validado", desc: "Já funcionou para mais de 2.500 alunos em 15 países" },
-  { icon: Clock, title: "Tempo Livre", desc: "Trabalhe apenas 2-3 horas por dia com o sistema rodando" },
+  { icon: Shield, title: "Método Validado", desc: "Testado e aprovado por dezenas de alunos com resultados reais" },
+  { icon: Clock, title: "Sistema Automático", desc: "Monte uma estrutura que vende mesmo quando você não está online" },
   { icon: Globe, title: "Venda Global", desc: "Aprenda a vender em dólar e euro para o mundo todo" },
-  { icon: BarChart3, title: "ROI Alto", desc: "Nossos alunos atingem em média 8x de retorno em ads" },
+  { icon: BarChart3, title: "ROI Positivo", desc: "Aprenda a investir em ads com retorno positivo e previsível" },
   { icon: Repeat, title: "Receita Recorrente", desc: "Construa renda previsível e crescente mês a mês" },
   { icon: Heart, title: "Qualidade de Vida", desc: "Tenha liberdade geográfica e financeira de verdade" },
 ];

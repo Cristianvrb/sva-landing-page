@@ -14,7 +14,7 @@ const SocialProof = () => {
     <section className="py-12 relative overflow-hidden z-20">
       <div className="section-container">
         <div className="text-center mb-6">
-          <p className="text-xs text-muted-foreground uppercase tracking-[0.2em] font-medium">Resultados 100% validados e integrados com</p>
+          <p className="text-xs text-muted-foreground uppercase tracking-[0.2em] font-medium">Nosso sistema funciona com as maiores plataformas</p>
         </div>
 
         {/* Glass Container */}

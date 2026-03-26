@@ -66,7 +66,7 @@ const Author = () => {
                 sistema que realmente vende no automático.
               </p>
               <p className="text-muted-foreground leading-relaxed font-semibold">
-                Já ajudei alunos a saírem do zero e chegarem a múltiplos 6 e até 7 dígitos com vendas automáticas.
+                Já ajudei alunos a saírem do zero, fazerem suas primeiras vendas automáticas e construírem um faturamento consistente.
               </p>
 
               {/* Badges */}
@@ -77,11 +77,11 @@ const Author = () => {
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 rounded bg-brand-accent/10 border border-brand-accent/20">
                   <Users className="w-4 h-4 text-brand-accent" />
-                  <span className="text-sm font-medium">143 inscritos no YouTube</span>
+                  <span className="text-sm font-medium">Comunidade ativa de alunos</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 rounded bg-yellow-500/10 border border-yellow-500/20">
                   <Star className="w-4 h-4 text-yellow-500" />
-                  <span className="text-sm font-medium">Alunos com +R$ 1M faturado</span>
+                  <span className="text-sm font-medium">Resultados comprovados em prints</span>
                 </div>
               </div>
             </div>

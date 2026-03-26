@@ -7,8 +7,8 @@ import { LazySection } from "@/components/LazySection";
 
 // Lazy Loaded Components for maximum load speed (TTI/FCP Optimization)
 const TestimonialCarousel = React.lazy(() => import("@/components/landing/TestimonialCarousel"));
-const ScreenshotGallery = React.lazy(() => import("@/components/landing/ScreenshotGallery"));
 const ProblemAgitation = React.lazy(() => import("@/components/landing/ProblemAgitation"));
+const CourseContent = React.lazy(() => import("@/components/landing/CourseContent"));
 const Comparison = React.lazy(() => import("@/components/landing/Comparison"));
 const WhatIsSVA = React.lazy(() => import("@/components/landing/WhatIsSVA"));
 const Benefits = React.lazy(() => import("@/components/landing/Benefits"));
@@ -42,7 +42,6 @@ const Index = () => {
         <LazySection>
           <FeaturedTestimonial />
           <StudentResults />
-          <ScreenshotGallery />
         </LazySection>
         <LazySection>
           <ProblemAgitation />
@@ -51,6 +50,7 @@ const Index = () => {
         <LazySection>
           <WhatIsSVA />
           <Benefits />
+          <CourseContent />
           <ScrollCTA text="QUERO MONTAR MEU SISTEMA DE VENDAS" subtext="Do zero aos R$10k + vendas diárias no automático" />
         </LazySection>
         <LazySection>
@@ -66,7 +66,7 @@ const Index = () => {
         </LazySection>
         <LazySection>
           <FAQ />
-          <ScrollCTA text="ÚLTIMA CHANCE — COMECE HOJE NO AUTOMÁTICO" subtext="Essa condição não volta depois que fechar essa turma" />
+          <ScrollCTA text="COMECE AGORA A VENDER NO AUTOMÁTICO" subtext="Preço promocional por tempo limitado — garanta antes que aumente" />
           <Footer />
         </LazySection>
         <WhatsAppFloat />
