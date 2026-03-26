@@ -3,6 +3,7 @@ import Hero from "@/components/landing/Hero";
 import SocialProof from "@/components/landing/SocialProof";
 import StickyBar from "@/components/landing/StickyBar";
 import AnimatedBackground from "@/components/landing/AnimatedBackground";
+import MetaPixelEvents from "@/components/tracking/MetaPixelEvents";
 import { LazySection } from "@/components/LazySection";
 
 // Lazy Loaded Components for maximum load speed (TTI/FCP Optimization)
@@ -29,6 +30,7 @@ const StudentResults = React.lazy(() => import("@/components/landing/StudentResu
 const Index = () => {
   return (
     <main className="min-h-screen bg-background relative z-0">
+      <MetaPixelEvents />
       <AnimatedBackground />
       <StickyBar />
       <Hero />
