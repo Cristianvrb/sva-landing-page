@@ -78,317 +78,165 @@
 }
 
 @layer components {
-  /* ---- Scroll Reveal Animations ---- */
+  /* ---- Scroll Reveal Animations (Lightweight) ---- */
   .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
   }
   .reveal.visible {
     opacity: 1;
     transform: translateY(0);
-  }
-  .reveal-left {
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .reveal-left.visible {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  .reveal-right {
-    opacity: 0;
-    transform: translateX(40px);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .reveal-right.visible {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  .reveal-scale {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .reveal-scale.visible {
-    opacity: 1;
-    transform: scale(1);
   }
 
   /* Stagger delays for children */
   .stagger-1 { transition-delay: 0.1s; }
   .stagger-2 { transition-delay: 0.2s; }
   .stagger-3 { transition-delay: 0.3s; }
-  .stagger-4 { transition-delay: 0.4s; }
-  .stagger-5 { transition-delay: 0.5s; }
-  .stagger-6 { transition-delay: 0.6s; }
-  .stagger-7 { transition-delay: 0.7s; }
-  .stagger-8 { transition-delay: 0.8s; }
 
-  /* ---- Glass Card (Leve e Eficiente) ---- */
+  /* ---- Premium Glass Card ---- */
   .glass-card {
-    @apply relative overflow-hidden rounded-lg border border-border;
+    @apply relative overflow-hidden rounded-2xl border border-white/5;
     background: linear-gradient(
-      135deg,
-      hsl(var(--brand-surface) / 0.8),
-      hsl(var(--brand-dark) / 0.4)
+      145deg,
+      hsl(var(--brand-surface) / 0.6),
+      hsl(var(--brand-dark) / 0.8)
     );
-    backdrop-filter: blur(12px);
-    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
-  }
-  .glass-card::before {
-    content: "";
-    @apply absolute inset-0 opacity-0 transition-opacity duration-500 pointer-events-none z-[-1];
-    background: radial-gradient(circle at center, hsl(var(--brand-accent) / 0.08) 0%, transparent 70%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   }
   .glass-card:hover {
     transform: translateY(-4px);
-    border-color: hsl(var(--brand-accent) / 0.3);
-    box-shadow: 0 10px 40px hsl(var(--brand-accent) / 0.1);
-  }
-  .glass-card:hover::before {
-    opacity: 1;
+    border-color: hsl(var(--brand-accent) / 0.2);
+    box-shadow: 0 12px 40px hsl(var(--brand-accent) / 0.1);
   }
 
-  /* ---- CTA Button ---- */
+  /* ---- CTA Button (Premium Soft) ---- */
   .btn-tech {
-    @apply relative inline-flex items-center justify-center gap-2 px-8 py-4 font-tech font-bold text-lg uppercase tracking-wider transition-all duration-300;
-    background: linear-gradient(135deg, hsl(var(--brand-cta)), hsl(0 85% 40%));
-    clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+    @apply relative inline-flex items-center justify-center gap-2 px-8 py-4 font-sans font-bold text-lg uppercase tracking-wide transition-all duration-300 rounded-full overflow-hidden;
+    background: linear-gradient(135deg, hsl(var(--brand-cta)), hsl(25 95% 50%));
     color: hsl(var(--foreground));
+    box-shadow: 0 4px 14px 0 hsl(var(--brand-cta) / 0.3);
   }
   .btn-tech:hover {
-    @apply scale-105;
-    box-shadow: 0 0 30px hsl(var(--brand-cta) / 0.5), 0 0 80px hsl(var(--brand-cta) / 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px hsl(var(--brand-cta) / 0.5);
   }
   .btn-tech::after {
     content: "";
     @apply absolute inset-0 opacity-0 transition-opacity duration-300;
-    background: linear-gradient(90deg, transparent, hsl(0 0% 100% / 0.15), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
   }
   .btn-tech:hover::after {
     @apply opacity-100 animate-sweep;
   }
 
   .btn-tech-green {
-    @apply relative inline-flex items-center justify-center gap-2 px-8 py-4 font-tech font-bold text-lg uppercase tracking-wider transition-all duration-300;
-    background: linear-gradient(135deg, hsl(var(--brand-accent)), hsl(142 71% 30%));
-    clip-path: polygon(12px 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+    @apply relative inline-flex items-center justify-center gap-2 px-8 py-4 font-sans font-bold text-lg uppercase tracking-wide transition-all duration-300 rounded-full;
+    background: linear-gradient(135deg, hsl(var(--brand-accent)), hsl(142 60% 35%));
     color: hsl(var(--brand-dark));
+    box-shadow: 0 4px 14px 0 hsl(var(--brand-accent) / 0.3);
   }
   .btn-tech-green:hover {
-    @apply scale-105;
-    box-shadow: 0 0 30px hsl(var(--brand-accent) / 0.5), 0 0 80px hsl(var(--brand-accent) / 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px hsl(var(--brand-accent) / 0.5);
   }
 
   /* ---- Section Divider ---- */
   .tech-border-top {
-    @apply relative;
-  }
-  .tech-border-top::before {
-    content: "";
-    @apply absolute top-0 left-1/2 -translate-x-1/2 h-px w-1/2;
-    background: linear-gradient(90deg, transparent, hsl(var(--brand-accent)), transparent);
+    @apply relative border-t border-white/5;
   }
 
   /* ---- Alternating Section Backgrounds ---- */
   .section-alt {
-    background: linear-gradient(180deg, hsl(var(--brand-surface-alt)) 0%, hsl(var(--brand-dark)) 100%);
-  }
-
-  /* ---- Grid BG ---- */
-  .grid-bg {
-    background-image:
-      linear-gradient(hsl(var(--brand-accent) / 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--brand-accent) / 0.03) 1px, transparent 1px);
-    background-size: 60px 60px;
+    background: linear-gradient(180deg, hsl(var(--brand-dark)), hsl(var(--brand-surface-alt)));
   }
 
   .section-container {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-5xl mx-auto px-6 lg:px-8;
   }
 
   .section-title {
-    @apply font-tech text-3xl sm:text-4xl lg:text-5xl font-bold text-center tracking-tight;
+    @apply font-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-center tracking-tight text-white mb-4;
   }
 
+  /* ---- Elegant Gradient Text ---- */
   .neon-text {
     background: linear-gradient(
-      90deg,
-      hsl(var(--brand-accent)),
-      hsl(var(--foreground)) 30%,
-      hsl(var(--brand-accent))
+      135deg,
+      #34d399, /* Emerald 400 */
+      #10b981  /* Emerald 500 */
     );
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    text-shadow: 0 0 10px hsl(var(--brand-accent) / 0.3), 0 0 40px hsl(var(--brand-accent) / 0.1);
   }
 
-/* ---- Shimmer Effect ---- */
-  .shimmer {
-    position: relative;
-    overflow: hidden;
-  }
-  .shimmer::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      hsl(0 0% 100% / 0.04),
-      transparent
-    );
-    animation: shimmer-move 3s ease-in-out infinite;
-  }
-  @keyframes shimmer-move {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
-  }
-
-  /* ---- Floating Particles ---- */
-  @keyframes float-particle {
-    0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { transform: translateY(-100vh) translateX(20px); opacity: 0; }
+  /* ---- Subtle Grid Outline (Lightweight) ---- */
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
   }
 
   /* ---- Pulse Ring (WhatsApp) ---- */
   .pulse-ring::before {
     content: "";
     @apply absolute inset-0 rounded-full;
-    animation: pulse-ring-anim 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-    background: hsl(142 71% 45% / 0.3);
+    animation: pulse-ring-anim 2.5s cubic-bezier(0.2, 0.8, 0.2, 1) infinite;
+    background: hsl(142 71% 45% / 0.4);
   }
   @keyframes pulse-ring-anim {
-    0% { transform: scale(1); opacity: 0.6; }
-    100% { transform: scale(1.6); opacity: 0; }
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.5); opacity: 0; }
   }
 
-  /* 🔥 GEMINI 3.1 PRO HIGH ANIMATIONS 🔥 */
+  /* 💎 HIGH-END BACKGROUND CSS (Light/Performant) 💎 */
   
-  /* 1. Dynamic Floating Effect for Cards and Video */
-  .floating {
-    animation: float 6s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-12px); }
-  }
-
-  /* 2. Gradient Reveal Text */
-  .animate-gradient-text {
-    background: linear-gradient(
-      90deg,
-      hsl(var(--foreground)),
-      hsl(var(--brand-accent)),
-      hsl(var(--foreground))
-    );
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-
-  /* 3. Glowing Border Sweep (Incrível UX para Cards) */
-  .neon-border {
-    position: relative;
-    border: none !important;
-  }
-  .neon-border::before {
-    content: "";
+  /* Aurora Mesh Background - Fast rendering GPU */
+  .bg-aurora {
     position: absolute;
     inset: 0;
-    border-radius: inherit;
-    padding: 2px; /* Border thickness */
-    background: linear-gradient(
-      90deg, 
-      transparent, 
-      hsl(var(--brand-accent) / 0.8), 
-      transparent
-    );
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
+    overflow: hidden;
     z-index: -1;
+    background: hsl(var(--background));
   }
-
-  /* 4. Animated Grid Background Effect */
-  .grid-bg-animated {
-    background-image:
-      linear-gradient(hsl(var(--brand-accent) / 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(var(--brand-accent) / 0.05) 1px, transparent 1px);
-    background-size: 60px 60px;
-    /* Removed animation: scroll-grid because background-position causes Heavy CPU/Main Thread load */
-  }
-
-  /* 💎 HIGH-END BACKGROUND CSS 💎 */
   
-  /* Blob / Aurora Effect */
-  .animate-blob {
-    animation: blob 15s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+  .bg-aurora::before,
+  .bg-aurora::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.15;
+    animation: float-slow 20s ease-in-out infinite alternate;
   }
-  .animation-delay-2000 { animation-delay: 2s; }
-  .animation-delay-4000 { animation-delay: 4s; }
   
-  @keyframes blob {
-    0% { transform: translate(0px, 0px) scale(1); }
-    33% { transform: translate(30px, -50px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
-    100% { transform: translate(0px, 0px) scale(1); }
+  .bg-aurora::before {
+    top: -10%;
+    left: -10%;
+    width: 60vw;
+    height: 60vw;
+    background: hsl(var(--brand-accent));
+  }
+  
+  .bg-aurora::after {
+    bottom: -10%;
+    right: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: hsl(var(--brand-cta));
+    animation-delay: -10s;
   }
 
-  /* Cyber Grid Engine (Rolling/Moving floor) */
-  .cyber-grid-perspective {
-    transform: perspective(600px) rotateX(60deg) scale(1.5);
-    transform-origin: bottom center;
-    mask-image: linear-gradient(to bottom, transparent, black 80%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black 80%);
-    pointer-events: none;
-  }
-  .cyber-grid-pattern {
-    background-image: 
-      linear-gradient(to right, hsl(var(--brand-accent) / 0.2) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(var(--brand-accent) / 0.2) 1px, transparent 1px);
-    background-size: 50px 50px;
-    animation: gridScroll 1.5s linear infinite;
-  }
-  @keyframes gridScroll {
-    from { transform: translateY(0); }
-    to { transform: translateY(50px); }
-  }
-
-  /* Starfield Drift */
-  .bg-stars {
-    background-image: radial-gradient(1.5px 1.5px at 20px 30px, hsl(var(--foreground)), rgba(0,0,0,0)),
-                      radial-gradient(1.5px 1.5px at 40px 70px, hsl(var(--brand-accent)), rgba(0,0,0,0)),
-                      radial-gradient(1.5px 1.5px at 100px 100px, hsl(var(--foreground)), rgba(0,0,0,0)),
-                      radial-gradient(1px 1px at 150px 170px, rgba(255,255,255,0.7), rgba(0,0,0,0)),
-                      radial-gradient(1.5px 1.5px at 200px 220px, hsl(var(--brand-cta)/0.6), rgba(0,0,0,0)),
-                      radial-gradient(2px 2px at 300px 300px, rgba(255,255,255,0.8), rgba(0,0,0,0)),
-                      radial-gradient(1px 1px at 350px 370px, rgba(255,255,255,0.7), rgba(0,0,0,0)),
-                      radial-gradient(1px 1px at 400px 420px, hsl(var(--brand-accent)/0.8), rgba(0,0,0,0)),
-                      radial-gradient(2px 2px at 500px 550px, rgba(255,255,255,0.9), rgba(0,0,0,0));
-    background-size: 550px 600px;
-  }
-  /* Removed animate-stardrift as background-position animation spikes CPU on Mobile */
-  .animate-stardrift {
-    opacity: 0.8;
-  }
-
-  /* Infinite Logo Marquee */
-  .animate-scrolling-logos {
-    animation: scroll-logos 25s linear infinite;
-  }
-  .animate-scrolling-logos:hover {
-    animation-play-state: paused;
-  }
-  @keyframes scroll-logos {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  @keyframes float-slow {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(5%, 10%) scale(1.1); }
   }
 }
 

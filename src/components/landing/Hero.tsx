@@ -4,10 +4,7 @@ import { useState } from "react";
 const Hero = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   return (
-    <section className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden">
-      {/* Radial glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-brand-accent/5 blur-[120px] pointer-events-none" />
-
+    <section className="relative min-h-screen flex items-center justify-center py-20 overflow-hidden bg-aurora">
       <div className="section-container relative z-10 text-center">
         {/* Badge */}
         <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
@@ -18,7 +15,7 @@ const Hero = () => {
         </div>
 
         {/* HEADLINE PRINCIPAL */}
-        <h1 className="font-tech text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight max-w-4xl mx-auto">
+        <h1 className="font-sans text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 tracking-tight max-w-4xl mx-auto text-white leading-[1.1]">
           O Sistema que Gera Vendas <span className="neon-text">Automáticas Todo Dia</span> — Sem Aparecer, Sem Lançamentos.
         </h1>
         
@@ -28,8 +25,8 @@ const Hero = () => {
         </p>
 
         {/* Video embed Lite Facade */}
-        <div className="max-w-4xl mx-auto glass-card p-2 mb-10 neon-border">
-          <div className="relative aspect-video bg-brand-dark rounded overflow-hidden cursor-pointer group" onClick={() => setIsVideoLoaded(true)}>
+        <div className="max-w-4xl mx-auto glass-card p-2 md:p-3 mb-10 shadow-2xl">
+          <div className="relative aspect-video bg-black/50 rounded-xl overflow-hidden cursor-pointer group" onClick={() => setIsVideoLoaded(true)}>
             {!isVideoLoaded ? (
               <>
                 <img 
@@ -51,7 +48,7 @@ const Hero = () => {
                 title="Aula Gratuita SVA"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                className="absolute inset-0 w-full h-full rounded"
+                className="absolute inset-0 w-full h-full rounded-xl"
               />
             )}
           </div>
@@ -59,9 +56,9 @@ const Hero = () => {
 
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech text-xl px-12 py-5 animate-pulse-glow">
-            QUERO MEU SISTEMA DE VENDAS — R$ 97,90
-            <ArrowRight className="w-5 h-5" />
+          <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech">
+            QUERO MEU SISTEMA DE VENDAS
+            <ArrowRight className="w-5 h-5 ml-2" />
           </a>
         </div>
 
