@@ -19,7 +19,7 @@ const Benefits = () => {
     <section className="py-20 tech-border-top">
       <div className="section-container">
         <div className="text-center mb-14">
-          <p className="text-brand-accent font-tech text-sm uppercase tracking-widest mb-3">Benefícios</p>
+          <p className="text-brand-accent font-sans text-sm uppercase tracking-widest mb-3">Benefícios</p>
           <h2 className="section-title">
             Por que o Método SVA <span className="neon-text">Funciona</span>?
           </h2>
@@ -29,12 +29,12 @@ const Benefits = () => {
           {benefits.map((b, i) => (
             <div
               key={b.title}
-              className={`glass-card p-6 text-center hover:shadow-neon transition-all duration-300 group reveal ${isVisible ? "visible" : ""} stagger-${i + 1}`}
+              className={`glass-card p-6 text-center hover:shadow-[0_0_30px_rgba(33,197,93,0.3)] transition-all duration-300 group reveal ${isVisible ? "visible" : ""} stagger-${i + 1}`}
             >
               <div className="w-14 h-14 mx-auto rounded-lg bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center mb-4 group-hover:border-brand-accent/50 group-hover:scale-110 transition-all">
                 <b.icon className="w-7 h-7 text-brand-accent group-hover:rotate-12 transition-transform" />
               </div>
-              <h3 className="font-tech text-lg font-bold mb-2">{b.title}</h3>
+              <h3 className="font-sans text-lg font-bold mb-2">{b.title}</h3>
               <p className="text-muted-foreground text-sm">{b.desc}</p>
             </div>
           ))}

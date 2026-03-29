@@ -33,7 +33,7 @@ const Comparison = () => {
 
         <div ref={ref} className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <div className={`glass-card p-8 border-brand-cta/30 reveal-left ${isVisible ? "visible" : ""}`}>
-            <h3 className="font-tech text-2xl font-bold text-brand-cta mb-6 text-center">❌ SEM o Método</h3>
+            <h3 className="font-sans text-2xl font-bold text-brand-cta mb-6 text-center">❌ SEM o Método</h3>
             <ul className="space-y-4">
               {before.map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -44,8 +44,8 @@ const Comparison = () => {
             </ul>
           </div>
 
-          <div className={`glass-card p-8 border-brand-accent/30 shadow-neon reveal-right ${isVisible ? "visible" : ""}`}>
-            <h3 className="font-tech text-2xl font-bold neon-text mb-6 text-center">✅ COM o Método SVA</h3>
+          <div className={`glass-card p-8 border-brand-accent/30 shadow-[0_0_30px_rgba(33,197,93,0.3)] reveal-right ${isVisible ? "visible" : ""}`}>
+            <h3 className="font-sans text-2xl font-bold neon-text mb-6 text-center">✅ COM o Método SVA</h3>
             <ul className="space-y-4">
               {after.map((item) => (
                 <li key={item} className="flex items-start gap-3">

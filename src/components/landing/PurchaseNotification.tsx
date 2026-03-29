@@ -46,7 +46,7 @@ const PurchaseNotification = () => {
 
   return (
     <div className="fixed bottom-6 left-6 z-[55] animate-in slide-in-from-left-full duration-500 max-w-sm">
-      <div className="glass-card p-4 border-brand-accent/30 shadow-neon flex items-start gap-3">
+      <div className="glass-card p-4 border-brand-accent/30 shadow-[0_0_30px_rgba(33,197,93,0.3)] flex items-start gap-3">
         <div className="w-10 h-10 rounded-full bg-brand-accent/20 flex items-center justify-center shrink-0">
           <CheckCircle className="w-5 h-5 text-brand-accent" />
         </div>

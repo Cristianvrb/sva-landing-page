@@ -27,7 +27,7 @@ const FAQ = () => {
           <Accordion type="single" collapsible className="space-y-3">
             {faqs.map((faq, i) => (
               <AccordionItem key={i} value={`faq-${i}`} className="glass-card border-border px-6">
-                <AccordionTrigger className="hover:no-underline font-tech text-left">
+                <AccordionTrigger className="hover:no-underline font-sans text-left">
                   {faq.q}
                 </AccordionTrigger>
                 <AccordionContent>
@@ -40,7 +40,7 @@ const FAQ = () => {
 
         {/* CTA final */}
         <div className="text-center mt-12 space-y-4">
-          <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech text-lg px-12 py-5 animate-pulse-glow">
+          <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech text-lg px-12 py-5 ">
             QUERO MINHA VAGA AGORA
             <ArrowRight className="w-5 h-5" />
           </a>

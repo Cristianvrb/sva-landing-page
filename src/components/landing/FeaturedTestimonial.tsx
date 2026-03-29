@@ -8,7 +8,7 @@ const FeaturedTestimonial = () => {
     <section className="py-20 tech-border-top section-alt">
       <div className="section-container">
         <div className="text-center mb-10">
-          <p className="text-brand-accent font-tech text-sm uppercase tracking-widest mb-3">Caso Real — Verificado</p>
+          <p className="text-brand-accent font-sans text-sm uppercase tracking-widest mb-3">Caso Real — Verificado</p>
           <h2 className="section-title">
             Ele estava prestes a desistir…<br />
             <span className="neon-text">hoje está próximo de R$1 milhão faturado</span>
@@ -32,7 +32,7 @@ const FeaturedTestimonial = () => {
                   loading="lazy"
                 />
               </div>
-              <p className="text-[11px] text-muted-foreground text-center mt-2 font-tech uppercase tracking-wider">
+              <p className="text-[11px] text-muted-foreground text-center mt-2 font-sans uppercase tracking-wider">
                 Print real — sem edição
               </p>
             </div>
@@ -71,7 +71,7 @@ const FeaturedTestimonial = () => {
                 </p>
               </div>
 
-              <cite className={`block mt-8 text-sm text-muted-foreground not-italic font-tech reveal ${isVisible ? "visible" : ""} stagger-6`}>
+              <cite className={`block mt-8 text-sm text-muted-foreground not-italic font-sans reveal ${isVisible ? "visible" : ""} stagger-6`}>
                 — Bruno, aluno do Método SVA
               </cite>
             </div>
@@ -80,7 +80,7 @@ const FeaturedTestimonial = () => {
 
         {/* Transition */}
         <div className={`text-center mt-12 reveal ${isVisible ? "visible" : ""} stagger-6`}>
-          <p className="text-xl font-tech font-bold text-foreground">Esse não é um caso isolado.</p>
+          <p className="text-xl font-sans font-bold text-foreground">Esse não é um caso isolado.</p>
           <ArrowDown className="w-6 h-6 text-brand-accent mx-auto mt-3 animate-bounce" />
         </div>
       </div>

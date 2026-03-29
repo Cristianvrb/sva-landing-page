@@ -27,7 +27,7 @@ const Simulation = () => {
     <section className="py-20 tech-border-top section-alt">
       <div className="section-container">
         <div className="text-center mb-14">
-          <p className="text-brand-accent font-tech text-sm uppercase tracking-widest mb-3">Simulador</p>
+          <p className="text-brand-accent font-sans text-sm uppercase tracking-widest mb-3">Simulador</p>
           <h2 className="section-title">
             Simule Seus <span className="neon-text">Ganhos</span>
           </h2>
@@ -41,14 +41,14 @@ const Simulation = () => {
                 Investimento mensal em tráfego
               </label>
               <input type="range" min={200} max={10000} step={100} value={investment} onChange={(e) => setInvestment(Number(e.target.value))} className="w-full accent-brand-accent" />
-              <p className="font-tech text-2xl font-bold neon-text mt-2">R$ {investment.toLocaleString("pt-BR")}</p>
+              <p className="font-sans text-2xl font-bold neon-text mt-2">R$ {investment.toLocaleString("pt-BR")}</p>
             </div>
             <div>
               <label className="block text-sm text-muted-foreground mb-2">ROAS esperado</label>
               <input type="range" min={2} max={15} step={0.5} value={roas} onChange={(e) => setRoas(Number(e.target.value))} className="w-full accent-brand-accent" />
               <div className="flex items-center gap-3 mt-2">
-                <p className="font-tech text-2xl font-bold neon-text">{roas}x</p>
-                <span className={`text-sm font-tech font-medium ${scenario.color}`}>— {scenario.label}</span>
+                <p className="font-sans text-2xl font-bold neon-text">{roas}x</p>
+                <span className={`text-sm font-sans font-medium ${scenario.color}`}>— {scenario.label}</span>
               </div>
             </div>
           </div>
@@ -57,15 +57,15 @@ const Simulation = () => {
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <p className="text-xs text-muted-foreground">Receita Mês 1</p>
-                <p className="font-tech text-xl font-bold neon-text">R$ {(investment * roas).toLocaleString("pt-BR")}</p>
+                <p className="font-sans text-xl font-bold neon-text">R$ {(investment * roas).toLocaleString("pt-BR")}</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground">Lucro Mês 1</p>
-                <p className="font-tech text-xl font-bold text-brand-accent">R$ {(investment * roas - investment).toLocaleString("pt-BR")}</p>
+                <p className="font-sans text-xl font-bold text-brand-accent">R$ {(investment * roas - investment).toLocaleString("pt-BR")}</p>
               </div>
               <div>
                 <p className="text-xs text-muted-foreground">Receita Ano 1</p>
-                <p className="font-tech text-xl font-bold text-brand-cta">R$ {months.reduce((a, m) => a + m.receita, 0).toLocaleString("pt-BR")}</p>
+                <p className="font-sans text-xl font-bold text-brand-cta">R$ {months.reduce((a, m) => a + m.receita, 0).toLocaleString("pt-BR")}</p>
               </div>
             </div>
           </div>

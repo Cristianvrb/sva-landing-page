@@ -15,7 +15,7 @@ const TestimonialCarousel = () => {
     <section className="py-20 tech-border-top section-alt">
       <div className="section-container">
         <div className="text-center mb-14">
-          <p className="text-brand-cta font-tech text-sm uppercase tracking-widest mb-3">Provas Reais</p>
+          <p className="text-brand-cta font-sans text-sm uppercase tracking-widest mb-3">Provas Reais</p>
           <h2 className="section-title">
             Resultados <span className="neon-text">Comprovados</span> dos Nossos Alunos
           </h2>
@@ -45,7 +45,7 @@ const TestimonialCarousel = () => {
                   key={i}
                   className="glass-card flex flex-col items-center gap-2 p-4 text-center hover:scale-105 transition-transform"
                 >
-                  <span className="text-xs font-tech text-brand-accent">{item.label}</span>
+                  <span className="text-xs font-sans text-brand-accent">{item.label}</span>
                   <Icon className={`w-8 h-8 ${item.color}`} />
                   <span className="text-xs font-semibold text-foreground">{item.value}</span>
                 </div>

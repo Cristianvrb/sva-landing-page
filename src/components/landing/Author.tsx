@@ -7,7 +7,7 @@ const Author = () => {
   return (
     <section className="py-20 tech-border-top">
       <div className="section-container">
-        <p className="text-center text-brand-accent font-tech text-sm uppercase tracking-widest mb-2">Conheça seu mentor</p>
+        <p className="text-center text-brand-accent font-sans text-sm uppercase tracking-widest mb-2">Conheça seu mentor</p>
         <h2 className="section-title mb-12">Quem vai te guiar nessa jornada</h2>
 
         <div ref={ref} className={`glass-card p-8 md:p-12 max-w-4xl mx-auto reveal ${isVisible ? "visible" : ""}`}>
@@ -22,7 +22,7 @@ const Author = () => {
                 />
               </div>
               <div className="text-center">
-                <h3 className="font-tech text-2xl font-bold neon-text">Cristian Lourenço</h3>
+                <h3 className="font-sans text-2xl font-bold neon-text">Cristian Lourenço</h3>
                 <p className="text-muted-foreground text-sm mt-1">Especialista em Tráfego Pago e Automações</p>
                 {/* Social links */}
                 <div className="flex justify-center gap-3 mt-3">
@@ -93,7 +93,7 @@ const Author = () => {
             <p className="text-lg italic text-foreground leading-relaxed">
               "Meu trabalho não é só ensinar… é fazer você continuar até dar certo — mesmo quando parece que não vai."
             </p>
-            <cite className="block mt-3 text-sm text-muted-foreground not-italic font-tech">
+            <cite className="block mt-3 text-sm text-muted-foreground not-italic font-sans">
               — Cristian Lourenço
             </cite>
           </blockquote>

@@ -90,7 +90,7 @@ const StudentResults = () => {
       <div className="section-container">
         {/* Header */}
         <div className="text-center mb-14">
-          <p className="text-yellow-500 font-tech text-sm uppercase tracking-widest mb-3 flex justify-center items-center gap-2">
+          <p className="text-yellow-500 font-sans text-sm uppercase tracking-widest mb-3 flex justify-center items-center gap-2">
             <Trophy className="w-4 h-4" />
             Hall da Fama SVA
           </p>
@@ -117,7 +117,7 @@ const StudentResults = () => {
                 {/* Left: Rank + Info */}
                 <div className="flex items-center gap-5 w-full sm:w-auto">
                   <div
-                    className={`w-12 h-12 flex-shrink-0 rounded-full flex items-center justify-center font-tech font-bold text-xl ${r.bg} ${r.color}`}
+                    className={`w-12 h-12 flex-shrink-0 rounded-full flex items-center justify-center font-sans font-bold text-xl ${r.bg} ${r.color}`}
                   >
                     {i < 3 ? (
                       <Icon className={`w-6 h-6 ${r.color}`} />
@@ -137,11 +137,11 @@ const StudentResults = () => {
                 {/* Right: Revenue + Thumb */}
                 <div className="flex items-center justify-between sm:justify-end gap-6 w-full sm:w-auto mt-2 sm:mt-0 pt-3 sm:pt-0 border-t border-border sm:border-0">
                   <div className="text-left sm:text-right">
-                    <p className="text-xs text-muted-foreground uppercase font-tech tracking-wider mb-0.5">
+                    <p className="text-xs text-muted-foreground uppercase font-sans tracking-wider mb-0.5">
                       Faturamento Comprovado
                     </p>
                     <p
-                      className={`font-bold font-tech text-xl sm:text-2xl ${i < 3 ? r.color : "text-foreground"}`}
+                      className={`font-bold font-sans text-xl sm:text-2xl ${i < 3 ? r.color : "text-foreground"}`}
                     >
                       {r.amount}
                     </p>
@@ -164,7 +164,7 @@ const StudentResults = () => {
 
         {/* Extra results mini-grid */}
         <div className="max-w-4xl mx-auto mt-12">
-          <p className="text-center text-sm font-tech text-muted-foreground uppercase tracking-wider mb-6">
+          <p className="text-center text-sm font-sans text-muted-foreground uppercase tracking-wider mb-6">
             + mais resultados dos alunos
           </p>
           <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
@@ -200,7 +200,7 @@ const StudentResults = () => {
 
         {/* Dialog for full-size print */}
         <Dialog open={!!selectedPrint} onOpenChange={() => setSelectedPrint(null)}>
-          <DialogContent className="max-w-2xl p-2 bg-background/95 border-brand-accent/30 shadow-neon">
+          <DialogContent className="max-w-2xl p-2 bg-background/95 border-brand-accent/30 shadow-[0_0_30px_rgba(33,197,93,0.3)]">
             {selectedPrint && (
               <img
                 src={selectedPrint}

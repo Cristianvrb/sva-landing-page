@@ -19,7 +19,7 @@ const StudentRanking = () => {
     <section className="py-20 tech-border-top section-alt">
       <div className="section-container">
         <div className="text-center mb-14">
-          <p className="text-brand-accent font-tech text-sm uppercase tracking-widest mb-3">Hall da Fama</p>
+          <p className="text-brand-accent font-sans text-sm uppercase tracking-widest mb-3">Hall da Fama</p>
           <h2 className="section-title">
             Ranking dos <span className="neon-text">Top Alunos</span>
           </h2>
@@ -31,13 +31,13 @@ const StudentRanking = () => {
               key={r.pos}
               className={`glass-card p-4 mb-3 flex items-center gap-4 ${r.pos <= 3 ? "border-brand-accent/30" : ""} reveal ${isVisible ? "visible" : ""} stagger-${Math.min(i + 1, 8)}`}
             >
-              <div className={`w-10 h-10 rounded flex items-center justify-center font-tech font-bold text-lg ${r.pos <= 3 ? "bg-brand-accent/10" : "bg-secondary"}`}>
+              <div className={`w-10 h-10 rounded flex items-center justify-center font-sans font-bold text-lg ${r.pos <= 3 ? "bg-brand-accent/10" : "bg-secondary"}`}>
                 {r.icon ? <r.icon className={`w-5 h-5 ${r.color}`} /> : <span className="text-muted-foreground">#{r.pos}</span>}
               </div>
               <div className="flex-1">
                 <p className="font-semibold">{r.name}</p>
               </div>
-              <p className={`font-tech font-bold text-lg ${r.color}`}>{r.revenue}</p>
+              <p className={`font-sans font-bold text-lg ${r.color}`}>{r.revenue}</p>
             </div>
           ))}
         </div>

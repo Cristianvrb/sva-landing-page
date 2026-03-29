@@ -20,7 +20,7 @@ const Offer = () => {
       <div className="section-container">
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-brand-cta font-tech text-sm uppercase tracking-widest mb-3">Oferta Especial</p>
+          <p className="text-brand-cta font-sans text-sm uppercase tracking-widest mb-3">Oferta Especial</p>
           <h2 className="section-title">
             Comece a Vender no <span className="neon-text">Automático</span> Hoje
           </h2>
@@ -34,7 +34,7 @@ const Offer = () => {
           ref={ref}
           className={`max-w-2xl mx-auto mb-10 reveal-scale ${isVisible ? "visible" : ""}`}
         >
-          <div className="rounded-2xl border-2 border-brand-accent/40 bg-brand-dark/90 p-8 md:p-10 shadow-neon relative neon-border">
+          <div className="rounded-2xl border-2 border-brand-accent/40 bg-brand-dark/90 p-8 md:p-10 shadow-[0_0_30px_rgba(33,197,93,0.3)] relative ">
             {/* Badge */}
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
               <span className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-brand-accent text-xs font-bold text-background uppercase tracking-wider">
@@ -47,14 +47,14 @@ const Offer = () => {
               <div className="w-14 h-14 rounded-xl bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="w-7 h-7 text-brand-accent" />
               </div>
-              <h3 className="font-tech font-bold text-2xl mb-1">Método SVA — Curso Completo</h3>
+              <h3 className="font-sans font-bold text-2xl mb-1">Método SVA — Curso Completo</h3>
               <p className="text-sm text-muted-foreground">Do zero ao sistema vendendo no automático</p>
             </div>
 
             {/* Preço */}
             <div className="text-center mb-8">
               <p className="text-muted-foreground text-sm line-through mb-1">De R$ 297,00</p>
-              <p className="font-tech text-5xl font-bold neon-text leading-none">R$ 97,90</p>
+              <p className="font-sans text-5xl font-bold neon-text leading-none">R$ 97,90</p>
               <p className="text-muted-foreground text-sm mt-2">ou <span className="text-foreground font-semibold">12x de R$ 9,83</span> no cartão</p>
             </div>
 
@@ -73,7 +73,7 @@ const Offer = () => {
               href="https://pay.cakto.com.br/tky2x9d"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-tech text-lg px-8 py-5 w-full justify-center animate-pulse-glow"
+              className="btn-tech text-lg px-8 py-5 w-full justify-center "
             >
               QUERO MEU ACESSO AGORA — R$ 97,90
               <ArrowRight className="w-5 h-5" />

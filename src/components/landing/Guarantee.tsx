@@ -26,7 +26,7 @@ const Guarantee = () => {
             </div>
           </div>
 
-          <h2 className="font-tech text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="font-sans text-3xl sm:text-4xl font-bold mb-4">
             Garantia Incondicional de <span className="neon-text">7 Dias</span>
           </h2>
 
@@ -48,7 +48,7 @@ const Guarantee = () => {
 
           <div className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-brand-accent/10 border border-brand-accent/30">
             <ShieldCheck className="w-6 h-6 text-brand-accent" />
-            <span className="font-tech font-bold text-brand-accent text-lg">SATISFAÇÃO GARANTIDA OU SEU DINHEIRO DE VOLTA</span>
+            <span className="font-sans font-bold text-brand-accent text-lg">SATISFAÇÃO GARANTIDA OU SEU DINHEIRO DE VOLTA</span>
           </div>
         </div>
       </div>

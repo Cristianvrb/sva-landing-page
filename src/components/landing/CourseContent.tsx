@@ -140,7 +140,7 @@ const CourseContent = () => {
       <div className="section-container">
         {/* Header */}
         <div className="text-center mb-14">
-          <p className="text-brand-accent font-tech text-sm uppercase tracking-widest mb-3 flex justify-center items-center gap-2">
+          <p className="text-brand-accent font-sans text-sm uppercase tracking-widest mb-3 flex justify-center items-center gap-2">
             <Play className="w-4 h-4" />
             Conteúdo Completo
           </p>
@@ -182,13 +182,13 @@ const CourseContent = () => {
                     <Icon className={`w-5 h-5 ${mod.color}`} />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-xs font-tech text-muted-foreground uppercase tracking-wider">
+                    <p className="text-xs font-sans text-muted-foreground uppercase tracking-wider">
                       Módulo {mod.id}
                     </p>
                     <p className="font-bold text-foreground truncate">{mod.title}</p>
                   </div>
                   <div className="flex items-center gap-3 flex-shrink-0">
-                    <span className="text-xs font-tech text-muted-foreground hidden sm:inline">
+                    <span className="text-xs font-sans text-muted-foreground hidden sm:inline">
                       {mod.lessons.length} aulas
                     </span>
                     <ChevronDown

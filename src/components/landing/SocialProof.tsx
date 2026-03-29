@@ -38,7 +38,7 @@ const SocialProof = () => {
                     (e.target as HTMLImageElement).nextElementSibling?.classList.remove('hidden');
                   }}
                 />
-                <span className="hidden font-tech text-xl font-bold tracking-tight text-white">{platform.name}</span>
+                <span className="hidden font-sans text-xl font-bold tracking-tight text-white">{platform.name}</span>
               </div>
             ))}
           </div>

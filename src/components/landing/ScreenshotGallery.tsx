@@ -28,7 +28,7 @@ const ScreenshotGallery = () => {
     <section className="py-20 tech-border-top section-alt">
       <div className="section-container">
         <div className="text-center mb-14">
-          <p className="text-brand-cta font-tech text-sm uppercase tracking-widest mb-3">
+          <p className="text-brand-cta font-sans text-sm uppercase tracking-widest mb-3">
             Resultados Reais
           </p>
           <h2 className="section-title">
@@ -61,7 +61,7 @@ const ScreenshotGallery = () => {
                 />
               </div>
               <div className="mt-2 text-center">
-                <p className="text-sm font-tech text-brand-accent">{item.name}</p>
+                <p className="text-sm font-sans text-brand-accent">{item.name}</p>
                 <p className="text-xs text-muted-foreground">{item.result}</p>
               </div>
             </div>

@@ -37,7 +37,7 @@ const Hero = () => {
                   loading="eager" decoding="sync"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 bg-brand-cta rounded-full flex items-center justify-center shadow-neon-red group-hover:scale-110 transition-transform">
+                  <div className="w-20 h-20 bg-brand-cta rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(255,100,50,0.3)] group-hover:scale-110 transition-transform">
                     <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[20px] border-l-white border-b-[12px] border-b-transparent ml-2" />
                   </div>
                 </div>

@@ -14,7 +14,7 @@ const WhatIsSVA = () => {
     <section className="py-20 tech-border-top">
       <div className="section-container">
         <div className="text-center mb-14">
-          <p className="text-brand-accent font-tech text-sm uppercase tracking-widest mb-3">A Metodologia</p>
+          <p className="text-brand-accent font-sans text-sm uppercase tracking-widest mb-3">A Metodologia</p>
           <h2 className="section-title">
             O que é o <span className="neon-text">Método SVA</span>?
           </h2>
@@ -27,12 +27,12 @@ const WhatIsSVA = () => {
           {pillars.map((p, i) => (
             <div
               key={p.letter}
-              className={`glass-card p-8 text-center hover:shadow-neon transition-all duration-300 group reveal ${isVisible ? "visible" : ""} stagger-${i + 1}`}
+              className={`glass-card p-8 text-center hover:shadow-[0_0_30px_rgba(33,197,93,0.3)] transition-all duration-300 group reveal ${isVisible ? "visible" : ""} stagger-${i + 1}`}
             >
               <div className="w-20 h-20 mx-auto rounded-lg bg-brand-accent/10 border border-brand-accent/30 flex items-center justify-center mb-6 group-hover:border-brand-accent/60 group-hover:scale-110 transition-all">
-                <span className="font-tech text-4xl font-bold neon-text">{p.letter}</span>
+                <span className="font-sans text-4xl font-bold neon-text">{p.letter}</span>
               </div>
-              <h3 className="font-tech text-2xl font-bold mb-3">{p.title}</h3>
+              <h3 className="font-sans text-2xl font-bold mb-3">{p.title}</h3>
               <p.icon className="w-6 h-6 text-brand-accent mx-auto mb-4 group-hover:rotate-12 transition-transform" />
               <p className="text-muted-foreground leading-relaxed">{p.desc}</p>
             </div>

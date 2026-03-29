@@ -31,7 +31,7 @@ const TargetAudience = () => {
 
         <div ref={ref} className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <div className={`glass-card p-8 border-brand-accent/30 reveal-left ${isVisible ? "visible" : ""}`}>
-            <h3 className="font-tech text-xl font-bold neon-text mb-6">✅ É para você se...</h3>
+            <h3 className="font-sans text-xl font-bold neon-text mb-6">✅ É para você se...</h3>
             <ul className="space-y-3">
               {forYou.map((item) => (
                 <li key={item} className="flex items-start gap-3">
@@ -43,7 +43,7 @@ const TargetAudience = () => {
           </div>
 
           <div className={`glass-card p-8 border-brand-cta/30 reveal-right ${isVisible ? "visible" : ""}`}>
-            <h3 className="font-tech text-xl font-bold text-brand-cta mb-6">❌ NÃO é para você se...</h3>
+            <h3 className="font-sans text-xl font-bold text-brand-cta mb-6">❌ NÃO é para você se...</h3>
             <ul className="space-y-3">
               {notForYou.map((item) => (
                 <li key={item} className="flex items-start gap-3">

@@ -15,7 +15,7 @@ const InternationalSales = () => {
     <section className="py-20 tech-border-top">
       <div className="section-container">
         <div className="text-center mb-14">
-          <p className="text-brand-accent font-tech text-sm uppercase tracking-widest mb-3">Mercado Global</p>
+          <p className="text-brand-accent font-sans text-sm uppercase tracking-widest mb-3">Mercado Global</p>
           <h2 className="section-title">
             Venda Para o <span className="neon-text">Mundo Inteiro</span>
           </h2>
@@ -28,13 +28,13 @@ const InternationalSales = () => {
           {features.map((f, i) => (
             <div
               key={f.title}
-              className={`glass-card p-6 flex gap-4 hover:shadow-neon transition-all group reveal ${isVisible ? "visible" : ""} stagger-${i + 1}`}
+              className={`glass-card p-6 flex gap-4 hover:shadow-[0_0_30px_rgba(33,197,93,0.3)] transition-all group reveal ${isVisible ? "visible" : ""} stagger-${i + 1}`}
             >
               <div className="w-12 h-12 shrink-0 rounded-lg bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center group-hover:border-brand-accent/50 group-hover:scale-110 transition-all">
                 <f.icon className="w-6 h-6 text-brand-accent" />
               </div>
               <div>
-                <h3 className="font-tech text-lg font-bold mb-1">{f.title}</h3>
+                <h3 className="font-sans text-lg font-bold mb-1">{f.title}</h3>
                 <p className="text-muted-foreground text-sm">{f.desc}</p>
               </div>
             </div>

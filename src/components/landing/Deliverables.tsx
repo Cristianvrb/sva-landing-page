@@ -20,32 +20,34 @@ const Deliverables = () => {
     <section className="py-20 tech-border-top section-alt">
       <div className="section-container">
         <div className="text-center mb-14">
-          <p className="text-brand-accent font-tech text-sm uppercase tracking-widest mb-3">Conteúdo Completo</p>
+          <p className="text-brand-accent font-sans text-sm uppercase tracking-widest mb-3">Conteúdo Completo</p>
           <h2 className="section-title">
             O que Você Vai <span className="neon-text">Receber</span>
           </h2>
           <p className="text-muted-foreground mt-4">8 módulos • 30+ aulas práticas</p>
         </div>
 
-        <div ref={ref} className={`max-w-3xl mx-auto reveal ${isVisible ? "visible" : ""}`}>
-          <Accordion type="single" collapsible className="space-y-3">
-            {modules.map((m, i) => (
-              <AccordionItem key={i} value={`module-${i}`} className="glass-card border-border px-6">
-                <AccordionTrigger className="hover:no-underline">
-                  <div className="flex items-center gap-3">
-                    <BookOpen className="w-5 h-5 text-brand-accent shrink-0" />
-                    <div className="text-left">
-                      <p className="font-tech font-bold">{m.title}</p>
-                      <p className="text-xs text-muted-foreground">{m.lessons}</p>
-                    </div>
+        <div ref={ref} className={`grid md:grid-cols-2 gap-5 max-w-5xl mx-auto reveal ${isVisible ? "visible" : ""}`}>
+          {modules.map((m, i) => {
+            const moduleName = m.title.includes('—') ? m.title.split('—')[1].trim() : m.title;
+            return (
+              <div key={i} className="relative overflow-hidden rounded-[1.5rem] border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent p-6 sm:p-8 hover:border-brand-accent/30 transition-all duration-300 group hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(33,197,93,0.12)]">
+                <div className="flex items-start gap-5">
+                  <div className="w-14 h-14 rounded-2xl bg-brand-accent/10 border border-brand-accent/20 flex items-center justify-center shrink-0 group-hover:bg-brand-accent group-hover:text-brand-dark transition-all duration-300 shadow-inner">
+                    <span className="font-sans font-black text-xl text-brand-accent group-hover:text-brand-dark transition-colors">{i + 1}</span>
                   </div>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <p className="text-muted-foreground pl-8">{m.desc}</p>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+                  <div>
+                    <h3 className="font-sans font-extrabold text-xl text-white mb-2 leading-tight group-hover:text-brand-accent transition-colors">{moduleName}</h3>
+                    <div className="inline-flex items-center gap-1.5 mb-4">
+                      <BookOpen className="w-3.5 h-3.5 text-brand-cta" />
+                      <span className="text-[11px] font-black text-brand-cta uppercase tracking-widest">{m.lessons} Direto ao ponto</span>
+                    </div>
+                    <p className="text-sm text-foreground/70 leading-relaxed">{m.desc}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
