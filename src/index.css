@@ -212,7 +212,6 @@
     content: "";
     position: absolute;
     border-radius: 50%;
-    filter: blur(100px);
     opacity: 0.15;
     animation: float-slow 20s ease-in-out infinite alternate;
   }
@@ -222,7 +221,7 @@
     left: -10%;
     width: 60vw;
     height: 60vw;
-    background: hsl(var(--brand-accent));
+    background: radial-gradient(circle at center, hsl(var(--brand-accent)), transparent 70%);
   }
   
   .bg-aurora::after {
@@ -230,7 +229,7 @@
     right: -10%;
     width: 50vw;
     height: 50vw;
-    background: hsl(var(--brand-cta));
+    background: radial-gradient(circle at center, hsl(var(--brand-cta)), transparent 70%);
     animation-delay: -10s;
   }
 
