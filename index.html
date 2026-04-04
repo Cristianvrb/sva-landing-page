@@ -12,7 +12,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="image" href="https://img.youtube.com/vi/0oXf9pjQyRE/sddefault.jpg" />
+    <link rel="preload" as="image" href="https://img.youtube.com/vi/0oXf9pjQyRE/maxresdefault.jpg" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Rajdhani:wght@600;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Rajdhani:wght@600;700&display=swap" /></noscript>
     <meta property="og:title" content="Método SVA - Sistema de Vendas Automáticas">
@@ -30,14 +30,26 @@
       src="https://www.facebook.com/tr?id=9640493159391466&ev=PageView&noscript=1"
     /></noscript>
     <style>
-      @keyframes pulse-sva {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50% { opacity: .5; transform: scale(0.95); }
+      #fcp-facade {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100vh;
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        text-align: center; padding: 2rem; z-index: 9999;
+        background-color: #090e17; pointer-events: none;
+      }
+      .fcp-title {
+        font-family: sans-serif; font-size: 3rem; font-weight: bold; color: transparent;
+        line-height: 1.1; max-width: 56rem;
       }
     </style>
     <div id="root">
-      <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background-color: #090e17; z-index: 9999;">
-        <span style="font-family: sans-serif; font-size: 1.25rem; font-weight: bold; color: #21c55d; animation: pulse-sva 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;">Carregando SVA...</span>
+      <div id="fcp-facade">
+        <!-- We use an almost matching text and styling but absolutely positioned -->
+        <h1 class="fcp-title" style="color: #fff">
+          O Sistema que Gera Vendas Automáticas Todo Dia — Sem Aparecer, Sem Lançamentos.
+        </h1>
+        <p style="font-family: sans-serif; font-size: 1.25rem; color: #b1b5bd; max-width: 42rem; margin-top: 1.5rem;">
+          O método validado para atrair clientes e vender todos os dias usando tráfego pago e automações, sem depender de lançamentos.
+        </p>
       </div>
     </div>
     <script type="module" src="/src/main.tsx"></script>
