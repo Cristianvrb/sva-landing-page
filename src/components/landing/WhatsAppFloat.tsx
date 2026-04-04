@@ -13,7 +13,7 @@ const WhatsAppFloat = () => {
         </div>
       )}
       <a
-        href="https://wa.me/5532985151346?text=Olá! Tenho interesse no Método SVA"
+        href="https://wa.me/5532984685677?text=Olá! Tenho interesse no Método SVA"
         target="_blank"
         rel="noopener noreferrer"
         className="relative w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg hover:scale-110 transition-transform pulse-ring"
