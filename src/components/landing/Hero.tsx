@@ -34,7 +34,7 @@ const Hero = () => {
                   alt="Aula SVA Thumbnail" 
                   width="1280" height="720"
                   className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" 
-                  loading="eager" decoding="sync"
+                  loading="eager" decoding="sync" fetchPriority="high"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-20 h-20 bg-brand-cta rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(255,100,50,0.3)] group-hover:scale-110 transition-transform">

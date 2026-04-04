@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import Hero from "@/components/landing/Hero";
+import StudentVideo from "@/components/landing/StudentVideo";
 import SocialProof from "@/components/landing/SocialProof";
 import StickyBar from "@/components/landing/StickyBar";
 import AnimatedBackground from "@/components/landing/AnimatedBackground";
@@ -34,6 +35,7 @@ const Index = () => {
       <AnimatedBackground />
       <StickyBar />
       <Hero />
+      <StudentVideo />
       <SocialProof />
       
       <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="w-16 h-16 border-4 border-brand-accent border-t-transparent rounded-full animate-spin"></div></div>}>
