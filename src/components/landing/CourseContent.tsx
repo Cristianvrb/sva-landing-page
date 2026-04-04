@@ -76,6 +76,8 @@ const modules: Module[] = [
       { title: "Criando Site com I.A" },
       { title: "Recuperação de Vendas Automáticas" },
       { title: "Entrega e Oferta de Order Bump Automáticos" },
+      { title: "Automações Complexas" },
+      { title: "Criação de Vídeos com I.A" },
     ],
   },
   {
@@ -88,6 +90,9 @@ const modules: Module[] = [
       { title: "Criando Produto do Zero — Aula 2" },
       { title: "Criando Produto do Zero — Aula 3" },
       { title: "Hospedando Sua LP" },
+      { title: "Criação de Infoproduto Rápido" },
+      { title: "Modelagem Rápida de Infoprodutos" },
+      { title: "Criação de SaaS MVP" },
     ],
   },
   {
