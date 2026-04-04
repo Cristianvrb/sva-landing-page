@@ -20,7 +20,11 @@ export const LazySection = ({ children, minHeight = "50vh" }: { children: React.
 
   return (
     <div ref={ref} style={{ minHeight: isIntersecting ? 'auto' : minHeight }}>
-      {isIntersecting && children}
+      {isIntersecting && (
+        <React.Suspense fallback={<div className="flex items-center justify-center w-full h-full min-h-[200px]"><div className="w-10 h-10 border-4 border-brand-accent border-t-transparent rounded-full animate-spin"></div></div>}>
+          {children}
+        </React.Suspense>
+      )}
     </div>
   );
 };

@@ -38,7 +38,6 @@ const Index = () => {
       <StudentVideo />
       <SocialProof />
       
-      <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="w-16 h-16 border-4 border-brand-accent border-t-transparent rounded-full animate-spin"></div></div>}>
         <LazySection minHeight="400px">
           <TestimonialCarousel />
           <ScrollCTA text="QUERO MINHAS PRIMEIRAS VENDAS AUTOMÁTICAS" subtext="Acesso imediato — comece hoje mesmo" />
@@ -73,8 +72,9 @@ const Index = () => {
           <ScrollCTA text="COMECE AGORA A VENDER NO AUTOMÁTICO" subtext="Preço promocional por tempo limitado — garanta antes que aumente" />
           <Footer />
         </LazySection>
-        <WhatsAppFloat />
-      </Suspense>
+        <React.Suspense fallback={null}>
+          <WhatsAppFloat />
+        </React.Suspense>
     </main>
   );
 };
