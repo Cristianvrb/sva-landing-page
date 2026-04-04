@@ -25,19 +25,7 @@ const TestimonialCarousel = () => {
         </div>
 
         <div ref={ref} className={`max-w-3xl mx-auto reveal-scale ${isVisible ? "visible" : ""}`}>
-          <div className="glass-card overflow-hidden">
-            <div className="aspect-video">
-              <iframe
-                src="https://www.youtube.com/embed/V9i3ln_MNsI?rel=0"
-                title="Aluno faturou R$ 50 mil"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full rounded-lg"
-              />
-            </div>
-          </div>
-
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {proofs.map((item, i) => {
               const Icon = item.icon;
               return (
