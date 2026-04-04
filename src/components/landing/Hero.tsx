@@ -30,7 +30,7 @@ const Hero = () => {
             {!isVideoLoaded ? (
               <>
                 <img 
-                  src="https://img.youtube.com/vi/0oXf9pjQyRE/maxresdefault.jpg" 
+                  src="https://img.youtube.com/vi/0oXf9pjQyRE/hqdefault.jpg" 
                   alt="Aula SVA Thumbnail" 
                   width="1280" height="720"
                   className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" 
