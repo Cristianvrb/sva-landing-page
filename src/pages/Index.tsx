@@ -61,7 +61,7 @@ const Index = () => {
           <Deliverables />
           <Bonus />
         </LazySection>
-        <LazySection>
+        <LazySection id="oferta-container">
           <TargetAudience />
           <Author />
           <Offer />

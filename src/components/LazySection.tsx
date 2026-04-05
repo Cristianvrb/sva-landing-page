@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-export const LazySection = ({ children, minHeight = "50vh" }: { children: React.ReactNode, minHeight?: string }) => {
+export const LazySection = ({ children, minHeight = "50vh", id }: { children: React.ReactNode, minHeight?: string, id?: string }) => {
   const [isIntersecting, setIntersecting] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -19,7 +19,7 @@ export const LazySection = ({ children, minHeight = "50vh" }: { children: React.
   }, []);
 
   return (
-    <div ref={ref} style={{ minHeight: isIntersecting ? 'auto' : minHeight }}>
+    <div id={id} ref={ref} style={{ minHeight: isIntersecting ? 'auto' : minHeight }}>
       {isIntersecting && (
         <React.Suspense fallback={<div className="flex items-center justify-center w-full h-full min-h-[200px]"><div className="w-10 h-10 border-4 border-brand-accent border-t-transparent rounded-full animate-spin"></div></div>}>
           {children}

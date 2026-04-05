@@ -11,7 +11,14 @@ const ScrollCTA = ({
 }: ScrollCTAProps) => {
   return (
     <div className="py-12 text-center">
-      <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech text-lg px-12 py-5 ">
+      <a 
+        href="#oferta-container" 
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById('oferta-container')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+        className="btn-tech text-lg px-12 py-5 "
+      >
         {text}
         <ArrowRight className="w-5 h-5" />
       </a>

@@ -56,8 +56,15 @@ const Hero = () => {
 
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          <a href="https://pay.cakto.com.br/tky2x9d" target="_blank" rel="noopener noreferrer" className="btn-tech">
-            QUERO MEU SISTEMA DE VENDAS
+          <a 
+            href="#oferta-container" 
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('oferta-container')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="btn-tech"
+          >
+            VER PREÇO E GARANTIR MINHA VAGA
             <ArrowRight className="w-5 h-5 ml-2" />
           </a>
         </div>
