@@ -153,7 +153,7 @@ const StudentResults = () => {
                       width="100"
                       height="200"
                       loading="lazy"
-                      className="w-full h-full object-cover grayscale brightness-125"
+                      className="w-full h-full object-cover rounded shadow-md"
                     />
                   </div>
                 </div>
@@ -167,7 +167,7 @@ const StudentResults = () => {
           <p className="text-center text-sm font-sans text-muted-foreground uppercase tracking-wider mb-6">
             + mais resultados dos alunos
           </p>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
             {extraResults.map((item, i) => (
               <div
                 key={i}
@@ -181,7 +181,7 @@ const StudentResults = () => {
                     width="200"
                     height="400"
                     loading="lazy"
-                    className="w-full h-auto object-cover aspect-[1/2] transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-auto object-contain bg-black/20 rounded transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 <p className="text-[10px] sm:text-xs text-muted-foreground text-center mt-1.5 leading-tight">

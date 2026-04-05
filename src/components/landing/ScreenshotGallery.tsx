@@ -41,7 +41,7 @@ const ScreenshotGallery = () => {
 
         <div
           ref={ref}
-          className={`grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto reveal-scale ${isVisible ? "visible" : ""}`}
+          className={`grid grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto reveal-scale ${isVisible ? "visible" : ""}`}
         >
           {screenshots.map((item, index) => (
             <div
@@ -56,7 +56,7 @@ const ScreenshotGallery = () => {
                   width="400"
                   height="800"
                   decoding="async"
-                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105 aspect-[1/2]"
+                  className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
